@@ -3,17 +3,62 @@
 <html>
   <head>
     <title>Lambda School Newsfeed</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.less">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.less" />
     <script src="./components/Menu.js" defer></script>
-    <script src="./components/Article.js" defer></script>
+    <script type="module" src="./components/Article.js" defer></script>
+    <script type="module" src="./components/ArticleMaker.js" defer></script>
   </head>
   <body>
     <div class="header">
-      <img class="menu-button" src="./assets/menu.png"/>
+      <img class="menu-button" src="./assets/menu.png" />
       <h1>Lambda School Newsfeed</h1>
     </div>
     <div class="articles"></div>
+    <div class="articleMaker">
+      <h2>Create a New Article</h2>
+      <label for="">Title</label>
+      <input type="text" name="title" id="title" />
+
+      <p>
+        Date is automatically created when you push the create article button
+      </p>
+
+      <label for="firstParagraph">First Paragraph</label>
+      <textarea
+        type="text"
+        name="firstParagraph"
+        id="firstParagraph"
+        rows="3"
+        ,
+        cols="50"
+      ></textarea>
+
+      <label for="secondParagraph">Second Paragraph</label>
+      <textarea
+        type="text"
+        name="secondParagraph"
+        id="secondParagraph"
+        rows="3"
+        ,
+        cols="50"
+      >
+      </textarea>
+
+      <label for="thirdParagraph">Third Paragraph</label>
+      <textarea
+        type="text"
+        name="thirdParagraph"
+        id="thirdParagraph"
+        rows="3"
+        ,
+        cols="50"
+      ></textarea>
+      <button>Create Article</button>
+    </div>
   </body>
 </html>
 <!-- Do not add anything to the HTML -->
